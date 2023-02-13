@@ -1,0 +1,2 @@
+# Linking the startup script
+powershell.exe -ExecutionPolicy Bypass -File "C:\path\to\CheckForUpdates.ps1"
