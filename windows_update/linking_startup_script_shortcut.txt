@@ -1,2 +1,11 @@
+# start powershell from CMD
+powershell
+start powershell -Verb runAs
+
+# run windows and microsoft updates
+Install-Module -Name PSWindowsUpdate
+Add-WUServiceManager -ServiceID "7971f918-a847-4430-9279-4a52d1efe18d" -AddServiceFlag 7
+Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
+
 # Linking the startup script
 powershell.exe -ExecutionPolicy Bypass -File "C:\path\to\CheckForUpdates.ps1"
